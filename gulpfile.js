@@ -24,10 +24,8 @@ function style() {
 
 function watch() {
     browserSync.init({
-        watch: true,       // <-- Adding this line solved my reload problem
-        server: {
-            baseDir: './pages/'
-        },
+        watch: true,
+        server: true
     });
     gulp.watch('./assets/scss/**/*.scss', style);
     gulp.watch('./pages/**/*.html').on('change', browserSync.reload);

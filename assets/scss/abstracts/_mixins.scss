@@ -1,0 +1,32 @@
+//usage
+//@extend %MIXIN
+
+$breakpoints: (
+        "xs": 479px,
+        "s": 767px,
+        "m": 1023px,
+        "l": 1279px,
+        "xl": 1439px
+) !default;
+
+@mixin resp($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
