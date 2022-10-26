@@ -133,6 +133,14 @@ video::-webkit-media-controls {
   background-color: #1e3745;
   color: #fff;
 }
+.btn-secondary {
+  background-color: #e9f7fb;
+  color: #1e3745;
+}
+
+main {
+  margin-top: 80px;
+}
 
 h1,
 h2,

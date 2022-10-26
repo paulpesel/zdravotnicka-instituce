@@ -1,3 +1,42 @@
-section {
-  height: 100vh;
+.hero {
+  padding: 104px 0;
+  background-image: url("/assets/img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #1e3745;
+  background: linear-gradient(90deg, #1e3745 0%, rgba(0, 0, 0, 0) 100%);
+}
+.hero .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+}
+.hero .wrap h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  font-size: 2rem;
+}
+@media (min-width: 992px) {
+  .hero .wrap h1 {
+    font-weight: 600;
+    font-size: 48px;
+    font-size: 3rem;
+  }
+}
+.hero .wrap p {
+  margin-top: 8px;
+  color: #fff;
+}
+.hero .wrap .btn {
+  margin-top: 40px;
 }
