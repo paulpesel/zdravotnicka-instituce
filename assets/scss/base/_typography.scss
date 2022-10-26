@@ -20,8 +20,8 @@ h1,
 	line-height: 1.4;
 	text-transform: uppercase;
 	font-family: $font-family-primary, system-ui,
-		-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-	@include resp('s') {
+		-apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+	@include resp("s") {
 		@include fontSize(48px);
 	}
 }
@@ -29,10 +29,10 @@ h1,
 h2,
 .h2 {
 	@include fontSize(40px);
-	@include resp('m') {
+	@include resp("m") {
 		@include fontSize(40px);
 	}
-	@include resp('s') {
+	@include resp("s") {
 		@include fontSize(32px);
 	}
 }

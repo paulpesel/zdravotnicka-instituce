@@ -1,0 +1,231 @@
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 0 0;
+  display: flex;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 1;
+}
+.hamburger.is-active:hover {
+  opacity: 1;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #fff;
+}
+
+.hamburger-box {
+  width: 16px;
+  height: 12px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -1px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -5px;
+}
+.hamburger-inner::after {
+  bottom: -5px;
+}
+
+/*
+ * Squeeze
+ */
+.hamburger--squeeze .hamburger-inner {
+  transition-duration: 0.075s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--squeeze .hamburger-inner::before {
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+.hamburger--squeeze .hamburger-inner::after {
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--squeeze.is-active .hamburger-inner {
+  transform: rotate(45deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--squeeze.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+.hamburger--squeeze.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+header {
+  background-color: #e9f7fb;
+  padding: 16px 0;
+  width: 100%;
+  position: fixed;
+}
+header .container {
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .logo {
+  width: 161px;
+  height: 48px;
+  display: flex;
+}
+header .container .logo img {
+  width: 100%;
+  height: 100%;
+}
+header .container .menu {
+  align-items: center;
+  margin-left: 40px;
+}
+header .container .menu .search {
+  width: 32px;
+  height: 32px;
+  background-color: #1e3745;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 16px 0 0;
+  border-radius: 4px;
+  font-weight: 500;
+}
+@media (min-width: 992px) {
+  header .container .menu .search {
+    margin: 0;
+    width: auto;
+    height: auto;
+    padding: 12px 28px;
+    border-radius: 8px;
+  }
+}
+header .container .menu .search span {
+  display: none;
+}
+@media (min-width: 992px) {
+  header .container .menu .search span {
+    display: flex;
+  }
+}
+header .container .menu .search img {
+  width: 16px;
+  height: 16px;
+}
+@media (min-width: 992px) {
+  header .container .menu .search img {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+  }
+}
+header .container .menu nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border-top: 1px solid #2aadd4;
+  top: 64px;
+  padding: 12px 40px;
+  background-color: #e9f7fb;
+}
+@media (min-width: 992px) {
+  header .container .menu nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    border-top: 0;
+    top: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+header .container .menu nav.open {
+  display: flex;
+}
+header .container .menu nav a.nav-item {
+  color: #1e3745;
+  font-weight: 500;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+@media (min-width: 992px) {
+  header .container .menu nav a.nav-item {
+    margin-right: 40px;
+    padding: 0;
+  }
+}
+header .container .menu nav a.nav-item::after {
+  content: "";
+  width: 9px;
+  height: 16px;
+  background-image: url("/assets/svg/arrow-right.svg");
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+  margin-left: 8px;
+}
+@media (min-width: 992px) {
+  header .container .menu nav a.nav-item::after {
+    display: none;
+  }
+}
+header .container .menu nav a.nav-item:hover {
+  color: #2aadd4;
+}
+header .container .menu .hamburger {
+  width: 32px;
+  height: 32px;
+  background-color: #1e3745;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+@media (min-width: 992px) {
+  header .container .menu .hamburger {
+    display: none;
+  }
+}

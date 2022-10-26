@@ -13,10 +13,10 @@
     <!-- https://favicon.io/ -->
 
     <!-- Styles -->
-    <link href="../assets/css/main.css" rel="stylesheet" type="text/css"/>
-    <link href="../assets/css/layout/header.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/layout/footer.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/pages/homepage.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/layout/header.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/layout/footer.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/pages/homepage.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,18 +26,45 @@
 </head>
 <body>
 <header>
-    <div class="conatiner">
-        <a href="#" title="Zdravotnická instituce" class="logo">
-            Zdravotnická instituce
+    <div class="container">
+        <a href="#" class="logo" title="Zdravotnická instituce" >
+            <img src="/assets/svg/logo-dark.svg" alt="Zdravotnická instituce" title="Zdravotnická instituce">
         </a>
-        <nav>
-            <a href="./pages/o-nas/index.html">O nás</a>
-            <a href="./pages/aktuality/index.html">Aktuality</a>
-            <a href="./pages/nasi-doktori/index.html">Naši doktoři</a>
-            <a href="./pages/kontakty/index.html">Kontakty</a>
-        </nav>
+        <div class="menu row">
+            <nav class="">
+                <a href="/tpl/o-nas" class="nav-item">O nás</a>
+                <a href="/tpl/aktuality" class="nav-item">Aktuality</a>
+                <a href="/tpl/nasi-doktori" class="nav-item">Naši doktoři</a>
+                <a href="/tpl/kontakty" class="nav-item">Kontakty</a>
+            </nav>
+            <a class="search" href="/tpl/vyhledavani" title="Vyhledávání">
+                <img src="/assets/svg/search.svg" alt="Vyhledávání" title="Vyhledávání">
+                <span>Vyhledávání</span>
+            </a>
+            <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+            </button>
+        </div>
     </div>
 </header>
+<section>
+    <div class="container">
 
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <span>© 2022 Zdravotnická instituce</span>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script>
+    $(".hamburger").on("click", function (){
+        $(this).toggleClass("is-active");
+        $("nav").toggleClass("open");
+    });
+</script>
 </body>
 </html>

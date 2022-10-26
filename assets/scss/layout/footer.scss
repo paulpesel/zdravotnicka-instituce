@@ -1,1 +1,15 @@
-@import '../import.scss';
+@import "../import.scss";
+
+footer {
+  width: 100%;
+  padding: 24px 0;
+  background-color: $color-primary;
+
+  .container {
+    justify-content: center;
+    span {
+      color: $color-white;
+      @include fontSize(14px);
+    }
+  }
+}

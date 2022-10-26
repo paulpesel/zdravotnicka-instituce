@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #FFF;
+  color: #fff;
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
   z-index: 1;
@@ -28,7 +28,7 @@ body {
   image-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeSpeed;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 img {
@@ -45,35 +45,34 @@ section {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 144px;
-}
-@media (max-width: 767px) {
-  section {
-    margin-bottom: 80px;
-  }
 }
 
 .container {
   margin: 0 auto;
   max-width: 1536px;
   width: 100%;
-  padding: 0 64px;
+  padding: 0 16px;
   display: flex;
   position: relative;
 }
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 40px;
-  }
-}
-@media (max-width: 767px) {
+@media (min-width: 480px) {
   .container {
     padding: 0 24px;
   }
 }
-@media (max-width: 479px) {
+@media (min-width: 992px) {
   .container {
-    padding: 0 16px;
+    padding: 0 32px;
+  }
+}
+@media (min-width: 1366px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 48px;
   }
 }
 
@@ -125,6 +124,16 @@ video::-webkit-media-controls {
   display: none !important;
 }
 
+.btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.btn-primary {
+  background-color: #1e3745;
+  color: #fff;
+}
+
 h1,
 h2,
 h3,
@@ -138,7 +147,7 @@ h6,
 .h5,
 .h6 {
   font-weight: 600;
-  color: #000;
+  color: #1e3745;
 }
 
 h1,
@@ -149,7 +158,7 @@ h1,
   text-transform: uppercase;
   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 }
-@media (max-width: 767px) {
+@media (min-width: 480px) {
   h1,
 .h1 {
     font-size: 48px;
@@ -162,14 +171,14 @@ h2,
   font-size: 40px;
   font-size: 2.5rem;
 }
-@media (max-width: 1023px) {
+@media (min-width: 992px) {
   h2,
 .h2 {
     font-size: 40px;
     font-size: 2.5rem;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 480px) {
   h2,
 .h2 {
     font-size: 32px;
@@ -178,7 +187,7 @@ h2,
 }
 
 p {
-  color: #000;
+  color: #1e3745;
   font-weight: 400;
   line-height: 1.75;
 }
