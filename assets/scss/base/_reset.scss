@@ -44,28 +44,26 @@ section {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 144px;
-  @include resp('s') {
-    margin-bottom: 80px;
-  }
 }
 
 .container {
   margin: 0 auto;
   max-width: 1536px;
   width: 100%;
-  padding: 0 64px;
+  padding: 0 16px;
   display: flex;
   position: relative;
-
-  @include resp('m') {
-    padding: 0 40px;
-  }
-  @include resp('s') {
+  @include resp("s") {
     padding: 0 24px;
   }
-  @include resp('xs') {
-    padding: 0 16px;
+  @include resp("m") {
+    padding: 0 32px;
+  }
+  @include resp("l") {
+    padding: 0 40px;
+  }
+  @include resp("xl") {
+    padding: 0 48px;
   }
 }
 
@@ -105,7 +103,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type='number'] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -115,4 +113,28 @@ video::-webkit-media-controls-start-playback-button {
 
 video::-webkit-media-controls {
   display: none !important;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: $font-weight-medium;
+
+  &-primary {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &-secondary {
+    background-color: $color-light-blue;
+    color: $color-primary;
+  }
+}
+
+main {
+  margin-top: 80px;
+}
+
+section {
+  padding: 40px 0;
 }

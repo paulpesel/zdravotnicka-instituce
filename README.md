@@ -3,8 +3,10 @@
 ## Installation
 - Run `npm install` to install dependencies
 
-## Gulp functions
+## Development
+You will find the static pages at `/tpl/`
 
+## Gulp functions
 In case gulp command is not found try
 `npm install --global gulp-cli`
 

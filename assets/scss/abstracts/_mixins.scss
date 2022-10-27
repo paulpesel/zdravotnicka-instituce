@@ -2,16 +2,16 @@
 //@extend %MIXIN
 
 $breakpoints: (
-        "xs": 479px,
-        "s": 767px,
-        "m": 1023px,
-        "l": 1279px,
-        "xl": 1439px
+        "xs": 320px,
+        "s": 480px,
+        "m": 992px,
+        "l": 1366px,
+        "xl": 1440px
 ) !default;
 
 @mixin resp($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
-    @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
       @content;
     }
   } @else {
@@ -20,7 +20,7 @@ $breakpoints: (
   }
 }
 
-@mixin pseudo($display: block, $pos: absolute, $content: '') {
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
   content: $content;
   display: $display;
   position: $pos;

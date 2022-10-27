@@ -1,0 +1,13 @@
+footer {
+  width: 100%;
+  padding: 24px 0;
+  background-color: #1e3745;
+}
+footer .container {
+  justify-content: center;
+}
+footer .container span {
+  color: #fff;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
