@@ -2,29 +2,75 @@
 <html lang="cs">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Zdravotnická instituce">
+    <meta property="og:description"
+          content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Fusce suscipit libero eget elit.">
+    <meta property="og:image" content="">
 
-    <!-- META TAGS -->
-    <!-- https://metatags.io/ -->
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Zdravotnická instituce">
+    <meta property="twitter:description"
+          content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Fusce suscipit libero eget elit.">
+    <meta property="twitter:image" content="">
 
     <!-- Favicon -->
-    <!-- https://favicon.io/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
     <!-- Styles -->
-
-    <link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
-    <link href="../assets/css/homepage.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/layout/header.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/layout/footer.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/pages/nasi-doktori.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>test23</header>
+<header>
+    <div class="container">
+        <a href="#" class="logo" title="Zdravotnická instituce">
+            <img src="/assets/svg/logo-dark.svg" alt="Zdravotnická instituce" title="Zdravotnická instituce">
+        </a>
+        <div class="menu row">
+            <nav class="">
+                <a href="/tpl/o-nas" class="nav-item">O nás</a>
+                <a href="/tpl/nasi-doktori" class="nav-item">Naši doktoři</a>
+                <a href="/tpl/aktuality" class="nav-item">Aktuality</a>
+                <a href="/tpl/kontakty" class="nav-item">Kontakty</a>
+            </nav>
+            <a class="search" href="/tpl/vyhledavani" title="Vyhledávání">
+                <img src="/assets/svg/search.svg" alt="Vyhledávání" title="Vyhledávání">
+                <span>Vyhledávání</span>
+            </a>
+            <button class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+            </button>
+        </div>
+    </div>
+</header>
+<main class="background">
 
+</main>
+<footer>
+    <div class="container">
+        <span>© 2022 Zdravotnická instituce</span>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="/assets/js/menu.js" type="text/javascript"></script>
 </body>
+
 </html>
