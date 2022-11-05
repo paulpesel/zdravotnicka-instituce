@@ -33,6 +33,9 @@ body {
 
 img {
   pointer-events: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 a {
@@ -129,11 +132,11 @@ video::-webkit-media-controls {
   border-radius: 8px;
   font-weight: 500;
 }
-.btn-primary {
+.btn--primary {
   background-color: #1e3745;
   color: #fff;
 }
-.btn-secondary {
+.btn--secondary {
   background-color: #e9f7fb;
   color: #1e3745;
 }
@@ -144,6 +147,38 @@ main {
 
 section {
   padding: 40px 0;
+}
+
+#hero {
+  padding: 104px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #1e3745;
+  background: linear-gradient(90deg, #1e3745 0%, rgba(0, 0, 0, 0) 100%);
+}
+#hero .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+}
+#hero .wrap h1 {
+  color: #fff;
+}
+#hero .wrap p {
+  margin-top: 8px;
+  color: #fff;
+}
+#hero .wrap .btn {
+  margin-top: 40px;
 }
 
 h1,

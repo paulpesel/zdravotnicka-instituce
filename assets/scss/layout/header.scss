@@ -24,115 +24,115 @@ header {
       }
     }
 
-    .menu {
+    .row {
       align-items: center;
       margin-left: 40px;
+    }
 
-      .search {
-        width: 32px;
-        height: 32px;
-        background-color: $color-primary;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 16px 0 0;
-        border-radius: 4px;
-        font-weight: $font-weight-medium;
+    .search {
+      width: 32px;
+      height: 32px;
+      background-color: $color-primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 16px 0 0;
+      border-radius: 4px;
+      font-weight: $font-weight-medium;
+      @include resp("m") {
+        margin: 0;
+        width: auto;
+        height: auto;
+        padding: 12px 28px;
+        border-radius: 8px;
+      }
+
+      span {
+        display: none;
         @include resp("m") {
-          margin: 0;
-          width: auto;
-          height: auto;
-          padding: 12px 28px;
-          border-radius: 8px;
+          display: flex;
         }
+      }
 
-        span {
-          display: none;
-          @include resp("m") {
-            display: flex;
-          }
-        }
-
-        img {
+      img {
+        width: 16px;
+        height: 16px;
+        @include resp("m") {
           width: 16px;
           height: 16px;
-          @include resp("m") {
-            width: 16px;
-            height: 16px;
-            margin-right: 12px;
-          }
+          margin-right: 12px;
         }
       }
+    }
 
-      nav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        border-top: 1px solid $color-secondary;
-        top: 64px;
-        padding: 12px 40px;
-        background-color: $color-light-blue;
-        @include resp("m") {
-          position: relative;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          width: auto;
-          border-top: 0;
-          top: 0;
-          padding: 0;
-          background-color: transparent;
-        }
-
-        &.open {
-          display: flex;
-        }
-
-        a.nav-item {
-          color: $color-primary;
-          font-weight: $font-weight-medium;
-          padding: 12px 0;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          position: relative;
-          @include resp("m") {
-            margin-right: 40px;
-            padding: 0;
-          }
-
-          &::after {
-            content: "";
-            width: 9px;
-            height: 16px;
-            background-image: url("/assets/svg/arrow-right.svg");
-            background-size: contain;
-            background-position: center right;
-            background-repeat: no-repeat;
-            margin-left: 8px;
-            @include resp("m") {
-              display: none;
-            }
-          }
-
-          &:hover {
-            color: $color-secondary
-          }
-        }
-      }
-
-      .hamburger {
-        width: 32px;
-        height: 32px;
-        background-color: $color-primary;
+    .nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      border-top: 1px solid $color-secondary;
+      top: 64px;
+      padding: 12px 40px;
+      background-color: $color-light-blue;
+      @include resp("m") {
+        position: relative;
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        border-radius: 4px;
+        width: auto;
+        border-top: 0;
+        top: 0;
+        padding: 0;
+        background-color: transparent;
+      }
+
+      &.open {
+        display: flex;
+      }
+
+      &__item {
+        color: $color-primary;
+        font-weight: $font-weight-medium;
+        padding: 12px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
         @include resp("m") {
-          display: none;
+          margin-right: 40px;
+          padding: 0;
         }
+
+        &::after {
+          content: "";
+          width: 9px;
+          height: 16px;
+          background-image: url("/assets/svg/arrow-right.svg");
+          background-size: contain;
+          background-position: center right;
+          background-repeat: no-repeat;
+          margin-left: 8px;
+          @include resp("m") {
+            display: none;
+          }
+        }
+
+        &:hover {
+          color: $color-secondary
+        }
+      }
+    }
+
+    .hamburger {
+      width: 32px;
+      height: 32px;
+      background-color: $color-primary;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      @include resp("m") {
+        display: none;
       }
     }
   }

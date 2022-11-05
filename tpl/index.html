@@ -50,12 +50,12 @@
         <a href="#" class="logo" title="Zdravotnická instituce">
             <img src="/assets/svg/logo-dark.svg" alt="Zdravotnická instituce" title="Zdravotnická instituce">
         </a>
-        <div class="menu row">
-            <nav class="">
-                <a href="/tpl/o-nas" class="nav-item">O nás</a>
-                <a href="/tpl/nasi-doktori" class="nav-item">Naši doktoři</a>
-                <a href="/tpl/aktuality" class="nav-item">Aktuality</a>
-                <a href="/tpl/kontakty" class="nav-item">Kontakty</a>
+        <div class="row">
+            <nav role="navigation" class="nav nav--open">
+                <a href="/tpl/o-nas" class="nav__item">O nás</a>
+                <a href="/tpl/nasi-doktori" class="nav__item">Naši doktoři</a>
+                <a href="/tpl/aktuality" class="nav__item">Aktuality</a>
+                <a href="/tpl/kontakty" class="nav__item">Kontakty</a>
             </nav>
             <a class="search" href="/tpl/vyhledavani" title="Vyhledávání">
                 <img src="/assets/svg/search.svg" alt="Vyhledávání" title="Vyhledávání">
@@ -70,17 +70,17 @@
     </div>
 </header>
 <main>
-    <section class="hero">
+    <section id="hero">
         <div class="overlay"></div>
         <div class="container">
             <div class="wrap">
                 <h1>S námi k lepšímu zdraví</h1>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus.</p>
-                <a href="#" class="btn btn-secondary" title="Kontaktujte nás">Kontaktujte nás</a>
+                <a href="#" class="btn btn--secondary" title="Kontaktujte nás">Kontaktujte nás</a>
             </div>
         </div>
     </section>
-    <section class="about-us">
+    <section id="about-us">
         <div class="container">
             <div class="wrap">
                 <h2>O nás</h2>
@@ -94,10 +94,60 @@
             </div>
             <aside>
                 <img src="/assets/img/doctor.jpg" alt="O nás" title="O nás">
-                <p>
-                    „Lorem ipsum dolor sit amet, elit parturient libero adipiscing elit.“
-                </p>
+                <p>„Lorem ipsum dolor sit amet, elit parturient libero adipiscing elit.“</p>
             </aside>
+        </div>
+    </section>
+    <section id="doctors">
+        <div class="container">
+            <h2>Naši doktoři</h2>
+            <div class="row">
+                <div class="doctor__item">
+                    <img src="/assets/img/doctor.jpg" alt="Pavel Horáček" title="Pavel Horáček">
+                    <span class="doctor__name">Pavel Horáček</span>
+                    <span class="doctor__text">Specializuji se na:</span>
+                    <ul>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                    </ul>
+                </div>
+                <div class="doctor__item">
+                    <img src="/assets/img/doctor.jpg" alt="Pavel Horáček" title="Pavel Horáček">
+                    <span class="doctor__name">Pavel Horáček</span>
+                    <span class="doctor__text">Specializuji se na:</span>
+                    <ul>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                    </ul>
+                </div>
+                <div class="doctor__item">
+                    <img src="/assets/img/doctor.jpg" alt="Pavel Horáček" title="Pavel Horáček">
+                    <span class="doctor__name">Pavel Horáček</span>
+                    <span class="doctor__text">Specializuji se na:</span>
+                    <ul>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                    </ul>
+                </div><div class="doctor__item">
+                <img src="/assets/img/doctor.jpg" alt="Pavel Horáček" title="Pavel Horáček">
+                <span class="doctor__name">Pavel Horáček</span>
+                <span class="doctor__text">Specializuji se na:</span>
+                <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                </ul>
+            </div>
+
+            </div>
+            <a href="/tpl/nasi-doktori/" title="Naši doktoři" class="btn btn--primary">Naši doktoři</a>
         </div>
     </section>
 </main>

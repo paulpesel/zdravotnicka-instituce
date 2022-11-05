@@ -32,6 +32,9 @@ body {
 
 img {
   pointer-events: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 a {
@@ -120,12 +123,12 @@ video::-webkit-media-controls {
   border-radius: 8px;
   font-weight: $font-weight-medium;
 
-  &-primary {
+  &--primary {
     background-color: $color-primary;
     color: $color-white;
   }
 
-  &-secondary {
+  &--secondary {
     background-color: $color-light-blue;
     color: $color-primary;
   }
@@ -137,4 +140,41 @@ main {
 
 section {
   padding: 40px 0;
+}
+
+#hero {
+  padding: 104px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgb(30, 55, 69);
+    background: linear-gradient(90deg, rgba(30, 55, 69, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
+
+    h1 {
+      color: $color-white;
+    }
+
+    p {
+      margin-top: 8px;
+      color: $color-white;
+    }
+
+    .btn {
+      margin-top: 40px;
+    }
+  }
 }
