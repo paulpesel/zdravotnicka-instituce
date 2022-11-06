@@ -3,37 +3,37 @@
   background-position: center;
 }
 
-#kontakty-grid .container {
+#nasidoktori-grid .container {
   display: grid;
   border: black 1px solid;
   border-radius: 10px;
   grid-template-columns: minmax(50px, 500px);
   gap: 20px;
-  grid-template-rows: 30% fit-content(100%);
+  grid-template-rows: 25%;
   justify-content: center;
   padding: 3%;
   background-color: #e9f7fb;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#kontakty-grid .header {
+#nasidoktori-grid .header {
   grid-row: 1;
   background-color: #e9f7fb;
   color: #000000;
   padding-top: 3%;
   text-align: center;
 }
-#kontakty-grid .header .h2 {
+#nasidoktori-grid .header .h2 {
   font-size: 2em;
   border-bottom: 5px solid #2aadd4;
   display: inline-grid;
 }
-#kontakty-grid .header .h3 {
+#nasidoktori-grid .header .h3 {
   font-size: 1.5em;
   border-bottom: 3px solid #2aadd4;
   display: inline-grid;
 }
-#kontakty-grid .text {
+#nasidoktori-grid .text {
   padding: 2%;
   grid-row: 2;
   background-color: #e9f7fb;
