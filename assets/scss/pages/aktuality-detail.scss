@@ -4,43 +4,56 @@
   background-image: url("/assets/img/hero.jpg");
 }
 
-#about-us {
+#aktuality-detail-grid {
   .container {
-    flex-direction: column;
-    align-items: center;
-    @include resp("m") {
-      flex-direction: row;
-      align-items: center;
+    display: grid;
+    border: black 1px solid;
+    border-radius: 10px;
+    grid-template-columns: minmax(100px,500px) minmax(100px,500px) minmax(100px,500px) ;
+    gap:20px;
+    grid-template-rows: 1fr 1fr 1fr ;
+    place-items: stretch stretch;
+    justify-content: space-around;
+    padding: 1%;
+    background-color: #e9f7fb;
     }
   }
-  .detail-grid{
-    display: grid;
-    grid-template-columns: minmax(auto,200px);
-    gap:20px;
-    grid-auto-rows: 100px 100px;
-    grid-template-areas:
-            "img header"
-            "img text"
-            "img text";
-
-
     .header{
-      grid-area: header;
-      background-color: #1e3745;
-      color: #e9f7fb;
-      font-size: 1.5em;
+      grid-column: 1 / 4;
+      grid-row: 1;
+      background-color: #e9f7fb;
+      color: #000000;
+
+      padding-top: 5%;
+      .h2 {
+        font-size: 1.5em;
+        border-bottom: 5px solid #2aadd4;
+        display: inline;
+      }
+
     }
     .img{
-      grid-area: img;
-      max-width: 700px;
-      margin: 20px auto;
- display: grid;
+      grid-column: 1 / 2;
+      grid-row: 2 / 4 ;
+      max-width: 500px;
+      min-width: 250px;
+      border-radius: 10px;
+      border: #1e3745 1px solid;
+      align-self: center;
+
     }
     .text{
-      grid-area: header;
-      background-color: #1e3745;
-      color: #e9f7fb;
-      font-size: 1.5em;
+      padding: 2%;
+      grid-row: 2 / -1;
+      grid-column: 2 / -1;
+      background-color: #e9f7fb;
+      border: black solid 1px;
+      color: black;
+      font-size: 1em;
+      border-radius: 10px;
+      align-self: flex-start;
+      align-items: stretch;
+      min-height: 200px;
+
     }
-  }
-}
+
