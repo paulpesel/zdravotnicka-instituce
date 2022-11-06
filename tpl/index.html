@@ -106,7 +106,7 @@
                 <div class="doctor">
                     <img src="/assets/img/doctor.jpg" alt="Pavel Horáček" title="Pavel Horáček">
                     <span class="doctor__name">Pavel Horáček</span>
-                    <span class="doctor__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+                    <p class="doctor__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     <ul>
                         <li>Lorem ipsum</li>
                         <li>Lorem ipsum</li>
@@ -117,7 +117,7 @@
                 <div class="doctor">
                     <img src="/assets/img/doctor.jpg" alt="Pavel Horáček" title="Pavel Horáček">
                     <span class="doctor__name">Pavel Horáček</span>
-                    <span class="doctor__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+                    <p class="doctor__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     <ul>
                         <li>Lorem ipsum</li>
                         <li>Lorem ipsum</li>
@@ -128,7 +128,7 @@
                 <div class="doctor">
                     <img src="/assets/img/doctor.jpg" alt="Pavel Horáček" title="Pavel Horáček">
                     <span class="doctor__name">Pavel Horáček</span>
-                    <span class="doctor__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+                    <p class="doctor__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     <ul>
                         <li>Lorem ipsum</li>
                         <li>Lorem ipsum</li>
@@ -139,7 +139,7 @@
                 <div class="doctor">
                     <img src="/assets/img/doctor.jpg" alt="Pavel Horáček" title="Pavel Horáček">
                     <span class="doctor__name">Pavel Horáček</span>
-                    <span class="doctor__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+                    <p class="doctor__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     <ul>
                         <li>Lorem ipsum</li>
                         <li>Lorem ipsum</li>
@@ -150,6 +150,38 @@
 
             </div>
             <a href="/tpl/nasi-doktori/" title="Naši doktoři" class="btn btn--primary">Naši doktoři</a>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="container">
+            <h2>Nejnovější aktuality</h2>
+            <div class="grid">
+                <div class="grid__item">
+                    <img src="/assets/img/doctor.jpg" alt="Název aktuality" title="Název aktuality">
+                    <span class="grid__name">Název aktuality</span>
+                    <p class="grid__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris suscipit,
+                        ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel
+                        metus.</p>
+                    <a href="/tpl/aktuality/aktuality-detail/" title="Název aktuality" class="btn btn--primary">Přečíst více</a>
+                </div>
+                <div class="grid__item">
+                    <img src="/assets/img/doctor.jpg" alt="Název aktuality" title="Název aktuality">
+                    <span class="grid__name">Název aktuality</span>
+                    <p class="grid__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris suscipit,
+                        ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel
+                        metus.</p>
+                    <a href="/tpl/aktuality/aktuality-detail/" title="Název aktuality" class="btn btn--primary">Přečíst více</a>
+                </div>
+                <div class="grid__item">
+                    <img src="/assets/img/doctor.jpg" alt="Název aktuality" title="Název aktuality">
+                    <span class="grid__name">Název aktuality</span>
+                    <p class="grid__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris suscipit,
+                        ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel
+                        metus.</p>
+                    <a href="/tpl/aktuality/aktuality-detail/" title="Název aktuality" class="btn btn--primary">Přečíst více</a>
+                </div>
+            </div>
+            <a href="/tpl/aktuality/" title="Všechny aktuality" class="btn btn--primary">Všechny aktuality</a>
         </div>
     </section>
     <section id="contact">
@@ -173,329 +205,8 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDUY1khXI554FdYTtSHVPcEU-l746GWkg&callback=initMap">
 </script>
 <script src="/assets/js/menu.js" type="text/javascript"></script>
+<script src="/assets/js/map.js" type="text/javascript"></script>
 <script>
-    function initMap() {
-        var styles = [
-            {
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#1d2c4d"
-                    }
-                ]
-            },
-            {
-                "elementType": "labels.text.fill",
-                "stylers": [
-                    {
-                        "color": "#8ec3b9"
-                    }
-                ]
-            },
-            {
-                "elementType": "labels.text.stroke",
-                "stylers": [
-                    {
-                        "color": "#1a3646"
-                    }
-                ]
-            },
-            {
-                "featureType": "administrative.country",
-                "elementType": "geometry.stroke",
-                "stylers": [
-                    {
-                        "color": "#4b6878"
-                    }
-                ]
-            },
-            {
-                "featureType": "administrative.land_parcel",
-                "elementType": "labels",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "administrative.land_parcel",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                    {
-                        "color": "#64779e"
-                    }
-                ]
-            },
-            {
-                "featureType": "administrative.province",
-                "elementType": "geometry.stroke",
-                "stylers": [
-                    {
-                        "color": "#4b6878"
-                    }
-                ]
-            },
-            {
-                "featureType": "landscape.man_made",
-                "elementType": "geometry.stroke",
-                "stylers": [
-                    {
-                        "color": "#334e87"
-                    }
-                ]
-            },
-            {
-                "featureType": "landscape.natural",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#023e58"
-                    }
-                ]
-            },
-            {
-                "featureType": "poi",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#283d6a"
-                    }
-                ]
-            },
-            {
-                "featureType": "poi",
-                "elementType": "labels.text",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "poi",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                    {
-                        "color": "#6f9ba5"
-                    }
-                ]
-            },
-            {
-                "featureType": "poi",
-                "elementType": "labels.text.stroke",
-                "stylers": [
-                    {
-                        "color": "#1d2c4d"
-                    }
-                ]
-            },
-            {
-                "featureType": "poi.business",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "poi.park",
-                "elementType": "geometry.fill",
-                "stylers": [
-                    {
-                        "color": "#023e58"
-                    }
-                ]
-            },
-            {
-                "featureType": "poi.park",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                    {
-                        "color": "#3C7680"
-                    }
-                ]
-            },
-            {
-                "featureType": "road",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#304a7d"
-                    }
-                ]
-            },
-            {
-                "featureType": "road",
-                "elementType": "labels.icon",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "road",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                    {
-                        "color": "#98a5be"
-                    }
-                ]
-            },
-            {
-                "featureType": "road",
-                "elementType": "labels.text.stroke",
-                "stylers": [
-                    {
-                        "color": "#1d2c4d"
-                    }
-                ]
-            },
-            {
-                "featureType": "road.arterial",
-                "elementType": "labels",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "road.highway",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#2c6675"
-                    }
-                ]
-            },
-            {
-                "featureType": "road.highway",
-                "elementType": "geometry.stroke",
-                "stylers": [
-                    {
-                        "color": "#255763"
-                    }
-                ]
-            },
-            {
-                "featureType": "road.highway",
-                "elementType": "labels",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "road.highway",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                    {
-                        "color": "#b0d5ce"
-                    }
-                ]
-            },
-            {
-                "featureType": "road.highway",
-                "elementType": "labels.text.stroke",
-                "stylers": [
-                    {
-                        "color": "#023e58"
-                    }
-                ]
-            },
-            {
-                "featureType": "road.local",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "road.local",
-                "elementType": "labels",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "transit",
-                "stylers": [
-                    {
-                        "visibility": "off"
-                    }
-                ]
-            },
-            {
-                "featureType": "transit",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                    {
-                        "color": "#98a5be"
-                    }
-                ]
-            },
-            {
-                "featureType": "transit",
-                "elementType": "labels.text.stroke",
-                "stylers": [
-                    {
-                        "color": "#1d2c4d"
-                    }
-                ]
-            },
-            {
-                "featureType": "transit.line",
-                "elementType": "geometry.fill",
-                "stylers": [
-                    {
-                        "color": "#283d6a"
-                    }
-                ]
-            },
-            {
-                "featureType": "transit.station",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#3a4762"
-                    }
-                ]
-            },
-            {
-                "featureType": "water",
-                "elementType": "geometry",
-                "stylers": [
-                    {
-                        "color": "#0e1626"
-                    }
-                ]
-            },
-            {
-                "featureType": "water",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                    {
-                        "color": "#4e6d70"
-                    }
-                ]
-            }
-        ];
-
-        const location = {lat: 50.1300343758753, lng: 14.373622813758605};
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 12,
-            center: location,
-            disableDefaultUI: true,
-            styles: styles,
-        });
-    }
-
     window.initMap = initMap;
 </script>
 </body>

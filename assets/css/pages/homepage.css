@@ -129,81 +129,52 @@
   margin-top: 40px;
 }
 
-#contact {
-  margin-top: 80px;
-  padding: 80px 0;
-}
-#contact .container {
-  width: auto;
-}
-#contact #map {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#contact .box {
-  background-color: #fff;
-  display: flex;
+#blog .container {
+  align-items: center;
   flex-direction: column;
-  padding: 32px 24px;
+}
+#blog .grid {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 16px;
+  margin-top: 40px;
+}
+@media (min-width: 992px) {
+  #blog .grid {
+    grid-template-columns: auto auto auto;
+  }
+}
+#blog .grid__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px 16px;
   border-radius: 16px;
   -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
   -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
   box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
 }
-@media (min-width: 992px) {
-  #contact .box {
-    padding: 40px;
-  }
+#blog .grid__item img {
+  height: 160px;
+  border-radius: 16px;
 }
-#contact a {
-  color: #1e3745;
+#blog .grid__item .btn {
+  margin-top: 24px;
+}
+#blog .grid__name {
   font-weight: 600;
-  display: flex;
-  align-items: center;
+  color: #1e3745;
+  font-size: 20px;
+  font-size: 1.25rem;
+  margin-top: 16px;
+}
+#blog .grid__text {
+  color: #1e3745;
+  text-align: center;
+  margin-top: 8px;
   font-size: 14px;
   font-size: 0.875rem;
 }
-@media (min-width: 992px) {
-  #contact a {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
-}
-#contact a:hover {
-  color: #2aadd4;
-}
-#contact a:nth-child(n+2) {
-  margin-top: 16px;
-}
-@media (min-width: 992px) {
-  #contact a:nth-child(n+2) {
-    margin-top: 40px;
-  }
-}
-#contact a::before {
-  content: "";
-  height: 16px;
-  min-width: 16px;
-  width: 16px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 16px;
-}
-@media (min-width: 992px) {
-  #contact a::before {
-    height: 40px;
-    min-width: 40px;
-    width: 40px;
-    margin-right: 24px;
-  }
-}
-#contact a.phone::before {
-  background-image: url("/assets/svg/telephone.svg");
-}
-#contact a.mail::before {
-  background-image: url("/assets/svg/mail.svg");
+#blog .btn {
+  margin-top: 40px;
 }
