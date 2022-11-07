@@ -1,8 +1,85 @@
 @import "../import.scss";
 
-#background {
-  background-image: url("/assets/img/background.png");
-  background-position: center;
+#hero {
+  background-image: url("/assets/img/hero.jpg");
+}
+
+.doctors {
+  .container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
+  .doctor {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    border-radius: 16px;
+    -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+    -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+    box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+    width: 100%;
+    @include resp("s") {
+      width: calc(50% - 8px);
+    }
+    @include resp("m") {
+      width: calc(100% / 3 - 12px);
+    }
+
+    img {
+      height: 160px;
+      border-radius: 16px;
+      @include resp("m") {
+        height: 200px;
+      }
+    }
+
+    &__name {
+      font-weight: $font-weight-semibold;
+      color: $color-primary;
+      @include fontSize(20px);
+      margin-top: 16px;
+    }
+
+    &__text {
+      color: $color-primary;
+      margin-top: 8px;
+      @include fontSize(14px);
+    }
+
+    ul {
+      list-style-type: none;
+      margin-top: 4px;
+
+      li {
+        color: $color-primary;
+        @include fontSize(14px);
+        display: flex;
+        margin-top: 4px;
+
+        &::before {
+          content: "";
+          height: 6px;
+          width: 6px;
+          background-color: $color-secondary;
+          border-radius: 100%;
+          margin-top: 8px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 40px;
+  }
 }
 
 #nasidoktori-grid {
@@ -10,49 +87,53 @@
     display: grid;
     border: black 1px solid;
     border-radius: 10px;
-    grid-template-columns: minmax(50px,500px);
-    gap:20px;
+    grid-template-columns: minmax(50px, 500px);
+    gap: 20px;
     grid-template-rows: 25%;
     justify-content: center;
     padding: 3%;
     background-color: #e9f7fb;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  .header {
+    grid-row: 1;
+    background-color: #e9f7fb;
+    color: #000000;
+    padding-top: 3%;
+    text-align: center;
+
+    .h2 {
+      font-size: 2em;
+      border-bottom: 5px solid #2aadd4;
+      display: inline-grid;
     }
-    .header{
-      grid-row: 1;
-      background-color: #e9f7fb;
-      color: #000000;
-      padding-top: 3%;
-      text-align: center;
-      .h2 {
-        font-size: 2em;
-        border-bottom: 5px solid #2aadd4;
-        display: inline-grid;
-      }
-      .h3{
-        font-size: 1.5em;
-        border-bottom: 3px solid #2aadd4;
-        display: inline-grid;
-      }
+
+    .h3 {
+      font-size: 1.5em;
+      border-bottom: 3px solid #2aadd4;
+      display: inline-grid;
     }
-    .text{
-      padding: 2%;
-      grid-row: 2;
-      background-color: #e9f7fb;
-      color: black;
-      font-size: 1.2em;
-      border-radius: 10px;
-      align-self: flex-start;
-      align-items: center;
-      text-align: center;
-    }
+  }
+
+  .text {
+    padding: 2%;
+    grid-row: 2;
+    background-color: #e9f7fb;
+    color: black;
+    font-size: 1.2em;
+    border-radius: 10px;
+    align-self: flex-start;
+    align-items: center;
+    text-align: center;
+  }
 }
 
-.employ-grid{
+.employ-grid {
   display: grid;
   grid-template-rows: 100px 60%;
-  grid-template-columns: minmax(50px,500px) ;
+  grid-template-columns: minmax(50px, 500px);
   align-items: center;
   background-color: #e9f7fb;
   border-radius: 10px;
@@ -61,24 +142,28 @@
   border: 3px solid #2aadd4;
 
 
-  .nadpis-sekce{
+  .nadpis-sekce {
     font-size: 1.5em;
     grid-column: span 3;
     text-align: center;
     border-bottom: 2px solid #2aadd4;
 
   }
-  .item{
+
+  .item {
     margin: 15%;
-    img{
+
+    img {
       max-width: 100%;
       min-width: 50%;
       height: auto;
     }
-    h4{
+
+    h4 {
       border-bottom: 2px solid #2aadd4;
     }
-    p{
+
+    p {
       margin-top: 5px;
     }
   }
