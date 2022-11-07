@@ -33,6 +33,9 @@ body {
 
 img {
   pointer-events: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 a {
@@ -116,24 +119,16 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-video::-webkit-media-controls-start-playback-button {
-  display: none !important;
-}
-
-video::-webkit-media-controls {
-  display: none !important;
-}
-
 .btn {
   padding: 12px 28px;
   border-radius: 8px;
   font-weight: 500;
 }
-.btn-primary {
+.btn--primary {
   background-color: #1e3745;
   color: #fff;
 }
-.btn-secondary {
+.btn--secondary {
   background-color: #e9f7fb;
   color: #1e3745;
 }
@@ -144,6 +139,117 @@ main {
 
 section {
   padding: 40px 0;
+}
+
+#hero {
+  padding: 104px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #1e3745;
+  background: linear-gradient(90deg, #1e3745 0%, rgba(0, 0, 0, 0) 100%);
+}
+#hero .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+}
+#hero .wrap h1 {
+  color: #fff;
+}
+#hero .wrap p {
+  margin-top: 8px;
+  color: #fff;
+}
+#hero .wrap .btn {
+  margin-top: 40px;
+}
+
+#contact {
+  margin-top: 40px;
+  padding: 80px 0;
+}
+#contact .container {
+  width: auto;
+}
+#contact #map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#contact .box {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+  -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+  box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+}
+@media (min-width: 992px) {
+  #contact .box {
+    padding: 40px;
+  }
+}
+#contact a {
+  color: #1e3745;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+@media (min-width: 992px) {
+  #contact a {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+#contact a:hover {
+  color: #2aadd4;
+}
+#contact a:nth-child(n+2) {
+  margin-top: 16px;
+}
+@media (min-width: 992px) {
+  #contact a:nth-child(n+2) {
+    margin-top: 40px;
+  }
+}
+#contact a::before {
+  content: "";
+  height: 16px;
+  min-width: 16px;
+  width: 16px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 16px;
+}
+@media (min-width: 992px) {
+  #contact a::before {
+    height: 40px;
+    min-width: 40px;
+    width: 40px;
+    margin-right: 24px;
+  }
+}
+#contact a.phone::before {
+  background-image: url("/assets/svg/telephone.svg");
+}
+#contact a.mail::before {
+  background-image: url("/assets/svg/mail.svg");
 }
 
 h1,

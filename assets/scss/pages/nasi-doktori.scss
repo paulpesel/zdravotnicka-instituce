@@ -1,152 +1,86 @@
 @import "../import.scss";
 
-.background {
-  padding: 104px 0;
-  background-image: url("/assets/img/background.jpg");
-  background-size: cover;
+#background {
+  background-image: url("/assets/img/background.png");
   background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
+}
 
-  .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background: rgb(30, 55, 69);
-    background: linear-gradient(90deg, rgba(30, 55, 69, 1) 0%, rgba(0, 0, 0, 0) 100%);
-  }
-
-  }
-
-.box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-    .size {
-      width: 80%;
-      height: 700px;
-      background-color: #e9f7fb;
-      border: solid #1e3745;
-      border-radius: 15px;
-    }
-  .layout-header{
-    width:100%;
-    height:12%;
-    border-radius:15px;
-    border-bottom:2px solid #1e3745;
-    position:center;
-
-    h1{
-      text-align: center;
-      align-items: center;
-      margin-top: 1%;
-    }
-  }
-
-    .grid-container {
-      display: grid;
-      grid-template-columns: 33% 33% 33%;
-      grid-template-rows: 45%;
-      background-color: #e9f7fb;
-      padding: 2%;
-      row-gap: 7%;
-    }
-    .grid-item {
-      background-color: #e9f7fb;
-      border: 2px solid #000;
-      padding: 10px;
-      text-align: center;
-      width:  350px;
-      height: 250px;
-      margin-top: 3%;
-      margin-left: 10%;
-      float: left;
-      line-height:  100px;
-      color: white;
-      font-weight: bold;
-      border-radius: 10px;
-    }
-  }
-
-
-
-
-
-
-
-  .wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 600px;
-
-    h1 {
-      color: $color-white;
-    }
-
-    p {
-      margin-top: 8px;
-      color: $color-white;
-    }
-
-    .btn {
-      margin-top: 40px;
-    }
-  }
-
-
-.about-us {
+#nasidoktori-grid {
   .container {
-    flex-direction: column;
-    align-items: center;
-    @include resp("m") {
-      flex-direction: row;
+    display: grid;
+    border: black 1px solid;
+    border-radius: 10px;
+    grid-template-columns: minmax(50px,500px);
+    gap:20px;
+    grid-template-rows: 25%;
+    justify-content: center;
+    padding: 3%;
+    background-color: #e9f7fb;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    .header{
+      grid-row: 1;
+      background-color: #e9f7fb;
+      color: #000000;
+      padding-top: 3%;
+      text-align: center;
+      .h2 {
+        font-size: 2em;
+        border-bottom: 5px solid #2aadd4;
+        display: inline-grid;
+      }
+      .h3{
+        font-size: 1.5em;
+        border-bottom: 3px solid #2aadd4;
+        display: inline-grid;
+      }
+    }
+    .text{
+      padding: 2%;
+      grid-row: 2;
+      background-color: #e9f7fb;
+      color: black;
+      font-size: 1.2em;
+      border-radius: 10px;
+      align-self: flex-start;
       align-items: center;
+      text-align: center;
     }
+}
+
+.employ-grid{
+  display: grid;
+  grid-template-rows: 100px 60%;
+  grid-template-columns: minmax(50px,500px) ;
+  align-items: center;
+  background-color: #e9f7fb;
+  border-radius: 10px;
+  padding: 1%;
+  margin: 10px;
+  border: 3px solid #2aadd4;
+
+
+  .nadpis-sekce{
+    font-size: 1.5em;
+    grid-column: span 3;
+    text-align: center;
+    border-bottom: 2px solid #2aadd4;
+
   }
-
-  .wrap {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    @include resp("m") {
-      margin-right: 80px;
+  .item{
+    margin: 15%;
+    img{
+      max-width: 100%;
+      min-width: 50%;
+      height: auto;
     }
-
-    p {
-      margin-top: 8px;
+    h4{
+      border-bottom: 2px solid #2aadd4;
     }
-  }
-
-  aside {
-    max-width: 480px;
-    width: 100%;
-    display: flex;
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-top: 40px;
-    @include resp("m") {
-      margin-top: 0;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    p {
-      @include fontSize(14px);
-      padding: 8px 16px;
-      background-color: $color-light-blue;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 80%;
-      border-top-left-radius: 8px;
+    p{
+      margin-top: 5px;
     }
   }
 }
+

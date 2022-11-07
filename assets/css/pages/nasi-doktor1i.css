@@ -1,0 +1,60 @@
+#hero {
+  background-image: url("/assets/img/hero.jpg");
+}
+
+#about-us .container {
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  #about-us .container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+#about-us .wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  #about-us .wrap {
+    margin-right: 80px;
+  }
+}
+#about-us .wrap p {
+  margin-top: 8px;
+}
+#about-us aside {
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+@media (min-width: 992px) {
+  #about-us aside {
+    margin-top: 0;
+  }
+}
+#about-us aside p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 8px 16px;
+  background-color: #e9f7fb;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  border-top-left-radius: 8px;
+}
+
+#doctors .container {
+  justify-content: center;
+  flex-direction: column;
+}
+#doctors .row {
+  flex-wrap: wrap;
+}
