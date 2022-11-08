@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- SEO -->
+    <title>Zdravotnická instituce</title>
+    <meta name="title" content="Zdravotnická instituce">
+    <meta name="description"
+          content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Fusce suscipit libero eget elit.">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
@@ -40,12 +50,12 @@
         <a href="#" class="logo" title="Zdravotnická instituce">
             <img src="/assets/svg/logo-dark.svg" alt="Zdravotnická instituce" title="Zdravotnická instituce">
         </a>
-        <div class="menu row">
-            <nav class="">
-                <a href="/tpl/o-nas" class="nav-item">O nás</a>
-                <a href="/tpl/nasi-doktori" class="nav-item">Naši doktoři</a>
-                <a href="/tpl/aktuality" class="nav-item">Aktuality</a>
-                <a href="/tpl/kontakty" class="nav-item">Kontakty</a>
+        <div class="row">
+            <nav role="navigation" class="nav nav--open">
+                <a href="/tpl/o-nas" class="nav__item">O nás</a>
+                <a href="/tpl/nasi-doktori" class="nav__item">Naši doktoři</a>
+                <a href="/tpl/aktuality" class="nav__item">Aktuality</a>
+                <a href="/tpl/kontakty" class="nav__item">Kontakty</a>
             </nav>
             <a class="search" href="/tpl/vyhledavani" title="Vyhledávání">
                 <img src="/assets/svg/search.svg" alt="Vyhledávání" title="Vyhledávání">
@@ -59,7 +69,31 @@
         </div>
     </div>
 </header>
-<main class="background">
+<main>
+    <section id="about-us-p">
+        <div class="container">
+            <div class="wrap">
+                <h2>O nás</h2>
+                <p>
+                    Jsme jednou z nějvětších soukromých zdravotnických zařízení v rakovnickém okresu se zaměřením na poskytování zdravotních služeb praktického lékařství působících v oboru již přes 10 let. Pacienti jsou u nás vždy na prvním místě a snažíme se jim vždy vyjít vstříc ve všech požadavcích. O naši zkušenosti hovoří více něž 1000 úspěšně léčených pacientů, kteří se do našeho zařízení neustále vracejí.
+                </p>
+            </div>
+            <aside>
+                <img src="/assets/img/hospital.jpg" alt="O nás" title="O nás">
+                <p>„Individuální přístup k pacientů je u nás na prvním místě.“</p>
+            </aside>
+        </div>
+    </section>
+    <section id="hero">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="wrap">
+                <h1>Přidejte se k našim spokojeným pacientům.</h1>
+                <p>Zajistěte pro sebe tu nejlepší péči.</p>
+                <a href="#" class="btn btn--secondary" title="Kontaktujte nás">Kontaktujte nás</a>
+            </div>
+        </div>
+    </section>
 
 </main>
 <footer>
