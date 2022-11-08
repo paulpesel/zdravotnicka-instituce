@@ -17,6 +17,12 @@
           content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Fusce suscipit libero eget elit.">
     <meta property="twitter:image" content="">
 
+    <!-- SEO -->
+    <title>Zdravotnická instituce</title>
+    <meta name="title" content="Zdravotnická instituce">
+    <meta name="description"
+          content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Fusce suscipit libero eget elit.">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
@@ -56,12 +62,12 @@
         <a href="#" class="logo" title="Zdravotnická instituce">
             <img src="/assets/svg/logo-dark.svg" alt="Zdravotnická instituce" title="Zdravotnická instituce">
         </a>
-        <div class="menu row">
-            <nav class="">
-                <a href="/tpl/o-nas" class="nav-item">O nás</a>
-                <a href="/tpl/nasi-doktori" class="nav-item">Naši doktoři</a>
-                <a href="/tpl/aktuality" class="nav-item">Aktuality</a>
-                <a href="/tpl/kontakty" class="nav-item">Kontakty</a>
+        <div class="row">
+            <nav role="navigation" class="nav nav--open">
+                <a href="/tpl/o-nas" class="nav__item">O nás</a>
+                <a href="/tpl/nasi-doktori" class="nav__item">Naši doktoři</a>
+                <a href="/tpl/aktuality" class="nav__item">Aktuality</a>
+                <a href="/tpl/kontakty" class="nav__item">Kontakty</a>
             </nav>
             <a class="search" href="/tpl/vyhledavani" title="Vyhledávání">
                 <img src="/assets/svg/search.svg" alt="Vyhledávání" title="Vyhledávání">
@@ -75,8 +81,27 @@
         </div>
     </div>
 </header>
-<main class="background">
-
+<main>
+    <section id="hero">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="wrap">
+                <h1>S námi k lepšímu zdraví</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus.</p>
+                <a href="#nurses" class="btn btn--secondary" title="Kontaktujte nás">Kontaktujte nás</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h1>Zde nás najdete</h1>
+           <div class="wrap">
+               <img src="/assets/img/happy-male-doctor-gesturing-okay-sign.jpg" alt="Jsme tu pro Vás" title="Jsme tu pro Vás">
+               <p>Zde sídlíme.</p>
+               <p>Uršulova 1, Praha 1, 110 00, Czechia</p>
+           </div>
+        </div>
+    </section>
 </main>
 <footer>
     <div class="container">
