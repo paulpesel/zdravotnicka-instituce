@@ -2,53 +2,55 @@
   background-image: url("/assets/img/hero.jpg");
 }
 
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  background: #1e3745;
-  background: linear-gradient(90deg, #1e3745 0%, rgba(0, 0, 0, 0) 100%);
-}
-
-.wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 600px;
-}
-.wrap h1 {
-  color: #fff;
-}
-.wrap p {
-  margin-top: 8px;
-  color: #fff;
-}
-.wrap .btn {
-  margin-top: 40px;
-}
-
-.about-us .container {
+#kontakty .container {
   flex-direction: column;
   align-items: center;
 }
 @media (min-width: 992px) {
-  .about-us .container {
+  #kontakty .container {
     flex-direction: row;
     align-items: center;
   }
 }
-.about-us .wrap {
+#kontakty .wrap {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   width: 100%;
 }
 @media (min-width: 992px) {
-  .about-us .wrap {
+  #kontakty .wrap {
     margin-right: 80px;
   }
 }
-.about-us .wrap p {
+#kontakty .wrap p {
   margin-top: 8px;
-  color: #1e3745;
+}
+#kontakty aside {
+  max-width: 750px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 40px;
+  -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+  -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+  box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+}
+@media (min-width: 992px) {
+  #kontakty aside {
+    margin-top: 0;
+  }
+}
+#kontakty aside p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 8px 16px;
+  background-color: #e9f7fb;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  border-top-left-radius: 16px;
 }
