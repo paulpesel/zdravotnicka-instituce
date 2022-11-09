@@ -1,0 +1,76 @@
+#hero {
+  background-image: url("/assets/img/lekar-search.jpg");
+}
+
+.doctors .container {
+  align-items: center;
+  flex-direction: column;
+}
+.doctors .row {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.doctors .doctor {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+  -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+  box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .doctors .doctor {
+    width: calc(50% - 8px);
+  }
+}
+@media (min-width: 992px) {
+  .doctors .doctor {
+    width: calc(33.3333333333% - 12px);
+  }
+}
+.doctors .doctor img {
+  height: 160px;
+  border-radius: 16px;
+}
+@media (min-width: 992px) {
+  .doctors .doctor img {
+    height: 200px;
+  }
+}
+.doctors .doctor__name {
+  font-weight: 600;
+  color: #1e3745;
+  font-size: 20px;
+  font-size: 1.25rem;
+  margin-top: 16px;
+}
+.doctors .doctor__text {
+  color: #1e3745;
+  margin-top: 8px;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.doctors .doctor ul {
+  list-style-type: none;
+  margin-top: 4px;
+}
+.doctors .doctor ul li {
+  color: #1e3745;
+  font-size: 14px;
+  font-size: 0.875rem;
+  display: flex;
+  margin-top: 4px;
+}
+.doctors .doctor ul li::before {
+  content: "";
+  height: 6px;
+  width: 6px;
+  background-color: #2aadd4;
+  border-radius: 100%;
+  margin-top: 8px;
+  margin-right: 8px;
+}

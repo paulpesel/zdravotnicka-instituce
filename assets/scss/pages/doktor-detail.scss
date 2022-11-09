@@ -1,0 +1,81 @@
+@import "../import.scss";
+
+#hero {
+  background-image: url("/assets/img/lekar-search.jpg");
+}
+
+.doctors {
+  .container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
+  .doctor {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    border-radius: 16px;
+    -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+    -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+    box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+    width: 100%;
+    @include resp("s") {
+      width: calc(50% - 8px);
+    }
+    @include resp("m") {
+      width: calc(100% / 3 - 12px);
+    }
+    img {
+      height: 160px;
+      border-radius: 16px;
+      @include resp("m") {
+        height: 200px;
+      }
+    }
+
+    &__name {
+      font-weight: $font-weight-semibold;
+      color: $color-primary;
+      @include fontSize(20px);
+      margin-top: 16px;
+    }
+
+    &__text {
+      color: $color-primary;
+      margin-top: 8px;
+      @include fontSize(14px);
+    }
+
+    ul {
+      list-style-type: none;
+      margin-top: 4px;
+
+      li {
+        color: $color-primary;
+        @include fontSize(14px);
+        display: flex;
+        margin-top: 4px;
+
+        &::before {
+          content: "";
+          height: 6px;
+          width: 6px;
+          background-color: $color-secondary;
+          border-radius: 100%;
+          margin-top: 8px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+
+
