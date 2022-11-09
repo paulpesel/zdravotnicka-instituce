@@ -1,14 +1,19 @@
-#news .container {
+#actuality .container {
   align-items: center;
   flex-direction: column;
 }
-#news .row {
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 24px;
+#actuality .grid {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 16px;
+  margin-top: 40px;
 }
-#news .actuality {
-  margin-top: 16px;
+@media (min-width: 992px) {
+  #actuality .grid {
+    grid-template-columns: auto auto auto;
+  }
+}
+#actuality .grid__item {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -17,35 +22,29 @@
   -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
   -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
   box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
-  width: 100%;
 }
-@media (min-width: 480px) {
-  #news .actuality {
-    width: calc(50% - 8px);
-  }
-}
-@media (min-width: 992px) {
-  #news .actuality {
-    width: calc(33.3333333333% - 12px);
-  }
-}
-#news .actuality img {
+#actuality .grid__item img {
   height: 160px;
   border-radius: 16px;
 }
-#news .actuality__name {
+#actuality .grid__item .btn {
+  margin-top: 24px;
+}
+#actuality .grid__name {
   font-weight: 600;
   color: #1e3745;
   font-size: 20px;
   font-size: 1.25rem;
   margin-top: 16px;
 }
-#news .actuality__text {
+#actuality .grid__text {
   color: #1e3745;
+  text-align: center;
   margin-top: 8px;
+  flex-grow: 1;
   font-size: 14px;
   font-size: 0.875rem;
 }
-#news .actuality__btn {
+#actuality .btn {
   margin-top: 40px;
 }

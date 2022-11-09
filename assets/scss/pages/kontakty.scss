@@ -1,7 +1,7 @@
 @import "../import.scss";
 
 #hero {
-  background-image: url("/assets/img/hero.jpg");
+  background-image: url("/assets/img/mereni tlak.jpg");
 }
 
 #kontakty {
@@ -18,16 +18,21 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+    gap: 24px;
     @include resp("m") {
       margin-right: 80px;
     }
+    h2{
+
+      border-bottom: 3px solid #2aadd4;
+    }
     p {
-      margin-top: 8px;
+      margin-top: 16px;
     }
   }
 
-  aside {
-    max-width: 750px;
+  figure {
+    max-width: 700px;
     width: 100%;
     display: flex;
     position: relative;
@@ -41,15 +46,16 @@
       margin-top: 0;
     }
 
-    p {
+    figcaption {
       @include fontSize(14px);
       padding: 8px 16px;
       background-color: $color-light-blue;
       position: absolute;
       bottom: 0;
-      right: 0;
-      width: 80%;
-      border-top-left-radius: 16px;
+      left: 0;
+      width: 55%;
+      border-top-right-radius: 16px;
+      color: $color-primary
     }
   }
 }

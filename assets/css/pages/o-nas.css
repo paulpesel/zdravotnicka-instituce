@@ -29,7 +29,7 @@
 #about-us-p .wrap p {
   margin-top: 20px;
 }
-#about-us-p aside {
+#about-us-p figure {
   max-width: 700px;
   width: 100%;
   display: flex;
@@ -42,18 +42,19 @@
   box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
 }
 @media (min-width: 992px) {
-  #about-us-p aside {
+  #about-us-p figure {
     margin-top: 0;
   }
 }
-#about-us-p aside p {
+#about-us-p figure figcaption {
   font-size: 14px;
   font-size: 0.875rem;
   padding: 8px 16px;
   background-color: #e9f7fb;
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   width: 80%;
-  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  color: #1e3745;
 }

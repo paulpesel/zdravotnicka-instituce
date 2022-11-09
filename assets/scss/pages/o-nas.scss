@@ -28,7 +28,7 @@
     }
   }
 
-  aside {
+  figure {
     max-width: 700px;
     width: 100%;
     display: flex;
@@ -43,15 +43,16 @@
       margin-top: 0;
     }
 
-    p {
+    figcaption {
       @include fontSize(14px);
       padding: 8px 16px;
       background-color: $color-light-blue;
       position: absolute;
       bottom: 0;
-      right: 0;
+      left: 0;
       width: 80%;
-      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      color: $color-primary
     }
   }
 }

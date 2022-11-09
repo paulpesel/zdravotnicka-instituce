@@ -1,7 +1,7 @@
 @import "../import.scss";
 
 #hero {
-  background-image: url("/assets/img/hero.jpg");
+  background-image: url("/assets/img/lekar-search.jpg");
 }
 
 .doctors {
@@ -32,13 +32,18 @@
     @include resp("m") {
       width: calc(100% / 3 - 12px);
     }
-
     img {
       height: 160px;
       border-radius: 16px;
       @include resp("m") {
         height: 200px;
       }
+    }
+    a{
+      transition: transform .1s;
+    }
+    a:hover{
+      transform: scale(0.95);
     }
 
     &__name {
@@ -76,96 +81,7 @@
       }
     }
   }
-
-  .btn {
-    margin-top: 40px;
-  }
 }
 
-#nasidoktori-grid {
-  .container {
-    display: grid;
-    border: black 1px solid;
-    border-radius: 10px;
-    grid-template-columns: minmax(50px, 500px);
-    gap: 20px;
-    grid-template-rows: 25%;
-    justify-content: center;
-    padding: 3%;
-    background-color: #e9f7fb;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
 
-  .header {
-    grid-row: 1;
-    background-color: #e9f7fb;
-    color: #000000;
-    padding-top: 3%;
-    text-align: center;
-
-    .h2 {
-      font-size: 2em;
-      border-bottom: 5px solid #2aadd4;
-      display: inline-grid;
-    }
-
-    .h3 {
-      font-size: 1.5em;
-      border-bottom: 3px solid #2aadd4;
-      display: inline-grid;
-    }
-  }
-
-  .text {
-    padding: 2%;
-    grid-row: 2;
-    background-color: #e9f7fb;
-    color: black;
-    font-size: 1.2em;
-    border-radius: 10px;
-    align-self: flex-start;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-.employ-grid {
-  display: grid;
-  grid-template-rows: 100px 60%;
-  grid-template-columns: minmax(50px, 500px);
-  align-items: center;
-  background-color: #e9f7fb;
-  border-radius: 10px;
-  padding: 1%;
-  margin: 10px;
-  border: 3px solid #2aadd4;
-
-
-  .nadpis-sekce {
-    font-size: 1.5em;
-    grid-column: span 3;
-    text-align: center;
-    border-bottom: 2px solid #2aadd4;
-
-  }
-
-  .item {
-    margin: 15%;
-
-    img {
-      max-width: 100%;
-      min-width: 50%;
-      height: auto;
-    }
-
-    h4 {
-      border-bottom: 2px solid #2aadd4;
-    }
-
-    p {
-      margin-top: 5px;
-    }
-  }
-}
 

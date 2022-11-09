@@ -76,52 +76,64 @@
     </div>
 </header>
 <main>
-    <section id="hero">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="wrap">
-                <h1>S námi k lepšímu zdraví</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus.</p>
-                <a href="#" class="btn btn--secondary" title="Kontaktujte nás">Kontaktujte nás</a>
-            </div>
-        </div>
-    </section>
+
     <section id="kontakty">
         <div class="container">
             <div class="wrap">
                 <h2>Zde nás najdete</h2>
                 <p>
-                    Zde sídlíme.
+                  Husovo náměstí 2347, Rakovník, 26901, Czechia
                 </p>
+                <h2>Kontaktní telefon</h2>
                 <p>
-                  Uršulova 1, Rakovník, 110 00, Czechia
+                    +420777877365
+                </p>
+                <h2>E-mail</h2>
+                <p>
+                    info@zdravotnicka-instituce.cz
                 </p>
             </div>
-            <aside>
-                <img src="/assets/img/hospital.jpg" alt="O nás" title="O nás">
-                <p>„Individuální přístup k pacientů je u nás na prvním místě.“</p>
-            </aside>
+            <figure>
+                <img src="/assets/img/hospital.jpg" alt="Naše nemocnice" title="Naše nemocnice">
+                <figcaption>„Léčíme v nejmodernějším zařízení.“</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="hero">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="wrap">
+                <h1>Nezapomňte na preventivní vyšetření</h1>
+                <p>Včasný záchyt onemocnění je klíčový v jeho následném léčení.</p>
+                <a href="#" class="btn btn--secondary" title="Kontaktujte nás">Kontaktujte nás</a>
+            </div>
         </div>
     </section>
     <section id="contact">
+        <div id="map"></div>
         <div class="container">
-            <h1>Zde nás najdete</h1>
-           <div class="wrap">
-               <img src="/assets/img/happy-male-doctor-gesturing-okay-sign.jpg" alt="Jsme tu pro Vás" title="Jsme tu pro Vás">
-               <p>Zde sídlíme.</p>
-               <p>Uršulova 1, Praha 1, 110 00, Czechia</p>
-           </div>
+            <div class="box">
+                <a href="tel:+420 123 123 123" title="Zavolejte nám" class="phone">+420 123 123 123</a>
+                <a href="mailto:info@zdravotnicka-instituce.cz" title="Napište nám" class="mail">info@zdravotnicka-instituce.cz</a>
+            </div>
         </div>
     </section>
 </main>
 <footer>
     <div class="container">
-        <span>© 2022 Zdravotnická instituce</span>
+        <span>© 2022 Zdravotnická instituce - Semestrální projekt</span>
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDUY1khXI554FdYTtSHVPcEU-l746GWkg&callback=initMap">
+</script>
 <script src="/assets/js/menu.js" type="text/javascript"></script>
+<script src="/assets/js/map.js" type="text/javascript"></script>
+<script>
+    window.initMap = initMap;
+</script>
 </body>
 
 

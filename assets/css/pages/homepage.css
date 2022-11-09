@@ -172,6 +172,7 @@
   color: #1e3745;
   text-align: center;
   margin-top: 8px;
+  flex-grow: 1;
   font-size: 14px;
   font-size: 0.875rem;
 }

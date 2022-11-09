@@ -2,70 +2,45 @@
   background-image: url("/assets/img/lekar-search.jpg");
 }
 
-.doctors .container {
-  align-items: center;
+#doctor-detail .container {
   flex-direction: column;
+  align-items: center;
 }
-.doctors .row {
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 24px;
+@media (min-width: 992px) {
+  #doctor-detail .container {
+    flex-direction: row;
+    align-items: center;
+  }
 }
-.doctors .doctor {
-  margin-top: 16px;
+#doctor-detail .wrap {
   display: flex;
   flex-direction: column;
-  padding: 24px 16px;
-  border-radius: 16px;
-  -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
-  -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
-  box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+  align-items: flex-start;
   width: 100%;
 }
-@media (min-width: 480px) {
-  .doctors .doctor {
-    width: calc(50% - 8px);
-  }
-}
 @media (min-width: 992px) {
-  .doctors .doctor {
-    width: calc(33.3333333333% - 12px);
+  #doctor-detail .wrap {
+    margin-right: 80px;
   }
 }
-.doctors .doctor img {
-  height: 160px;
-  border-radius: 16px;
+#doctor-detail .wrap h2 {
+  border-bottom: 5px solid #2aadd4;
 }
-@media (min-width: 992px) {
-  .doctors .doctor img {
-    height: 200px;
-  }
+#doctor-detail .wrap p {
+  margin-top: 20px;
 }
-.doctors .doctor__name {
-  font-weight: 600;
-  color: #1e3745;
-  font-size: 20px;
-  font-size: 1.25rem;
-  margin-top: 16px;
-}
-.doctors .doctor__text {
-  color: #1e3745;
-  margin-top: 8px;
-  font-size: 14px;
-  font-size: 0.875rem;
-}
-.doctors .doctor ul {
+#doctor-detail ul {
   list-style-type: none;
   margin-top: 4px;
 }
-.doctors .doctor ul li {
+#doctor-detail ul li {
   color: #1e3745;
   font-size: 14px;
   font-size: 0.875rem;
   display: flex;
-  margin-top: 4px;
+  margin-top: 12px;
 }
-.doctors .doctor ul li::before {
+#doctor-detail ul li::before {
   content: "";
   height: 6px;
   width: 6px;
@@ -73,4 +48,32 @@
   border-radius: 100%;
   margin-top: 8px;
   margin-right: 8px;
+}
+#doctor-detail aside {
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 60px;
+  -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+  -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+  box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+}
+@media (min-width: 992px) {
+  #doctor-detail aside {
+    margin-top: 0;
+  }
+}
+#doctor-detail aside p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 8px 16px;
+  background-color: #e9f7fb;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  border-top-left-radius: 16px;
 }

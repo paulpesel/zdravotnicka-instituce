@@ -3,76 +3,74 @@
 #hero {
   background-image: url("/assets/img/lekar-search.jpg");
 }
-
-.doctors {
+#doctor-detail {
   .container {
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    @include resp("m") {
+      flex-direction: row;
+      align-items: center;
+    }
   }
-
-  .row {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 24px;
-  }
-
-  .doctor {
-    margin-top: 16px;
+  .wrap {
     display: flex;
     flex-direction: column;
-    padding: 24px 16px;
-    border-radius: 16px;
+    align-items: flex-start;
+    width: 100%;
+    @include resp("m") {
+      margin-right: 80px;
+    }
+    h2{
+      border-bottom: 5px solid #2aadd4;
+    }
+    p {
+      margin-top: 20px;
+    }
+  }
+  ul {
+    list-style-type: none;
+    margin-top: 4px;
+
+    li {
+      color: $color-primary;
+      @include fontSize(14px);
+      display: flex;
+      margin-top: 12px;
+
+      &::before {
+        content: "";
+        height: 6px;
+        width: 6px;
+        background-color: $color-secondary;
+        border-radius: 100%;
+        margin-top: 8px;
+        margin-right: 8px;
+      }
+    }
+  }
+  aside {
+    max-width: 640px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 60px;
     -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
     -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
     box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
-    width: 100%;
-    @include resp("s") {
-      width: calc(50% - 8px);
-    }
     @include resp("m") {
-      width: calc(100% / 3 - 12px);
+      margin-top: 0;
     }
-    img {
-      height: 160px;
-      border-radius: 16px;
-      @include resp("m") {
-        height: 200px;
-      }
-    }
-
-    &__name {
-      font-weight: $font-weight-semibold;
-      color: $color-primary;
-      @include fontSize(20px);
-      margin-top: 16px;
-    }
-
-    &__text {
-      color: $color-primary;
-      margin-top: 8px;
+    p {
       @include fontSize(14px);
-    }
-
-    ul {
-      list-style-type: none;
-      margin-top: 4px;
-
-      li {
-        color: $color-primary;
-        @include fontSize(14px);
-        display: flex;
-        margin-top: 4px;
-
-        &::before {
-          content: "";
-          height: 6px;
-          width: 6px;
-          background-color: $color-secondary;
-          border-radius: 100%;
-          margin-top: 8px;
-          margin-right: 8px;
-        }
-      }
+      padding: 8px 16px;
+      background-color: $color-light-blue;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 80%;
+      border-top-left-radius: 16px;
     }
   }
 }

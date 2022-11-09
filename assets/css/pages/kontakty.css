@@ -1,5 +1,5 @@
 #hero {
-  background-image: url("/assets/img/hero.jpg");
+  background-image: url("/assets/img/mereni tlak.jpg");
 }
 
 #kontakty .container {
@@ -17,17 +17,21 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+  gap: 24px;
 }
 @media (min-width: 992px) {
   #kontakty .wrap {
     margin-right: 80px;
   }
 }
-#kontakty .wrap p {
-  margin-top: 8px;
+#kontakty .wrap h2 {
+  border-bottom: 3px solid #2aadd4;
 }
-#kontakty aside {
-  max-width: 750px;
+#kontakty .wrap p {
+  margin-top: 16px;
+}
+#kontakty figure {
+  max-width: 700px;
   width: 100%;
   display: flex;
   position: relative;
@@ -39,18 +43,19 @@
   box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
 }
 @media (min-width: 992px) {
-  #kontakty aside {
+  #kontakty figure {
     margin-top: 0;
   }
 }
-#kontakty aside p {
+#kontakty figure figcaption {
   font-size: 14px;
   font-size: 0.875rem;
   padding: 8px 16px;
   background-color: #e9f7fb;
   position: absolute;
   bottom: 0;
-  right: 0;
-  width: 80%;
-  border-top-left-radius: 16px;
+  left: 0;
+  width: 55%;
+  border-top-right-radius: 16px;
+  color: #1e3745;
 }

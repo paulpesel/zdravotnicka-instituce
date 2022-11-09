@@ -1,54 +1,55 @@
 @import "../import.scss";
 
-#news {
-  .container {
-    align-items: center;
-    flex-direction: column;
-  }
 
-  .row {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 24px;
-  }
+  #actuality {
+      .container {
+        align-items: center;
+        flex-direction: column;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 16px;
+        margin-top: 40px;
+        @include resp("m") {
+          grid-template-columns: auto auto auto;
+        }
 
-  .actuality {
-    margin-top: 16px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 24px 16px;
-    border-radius: 16px;
-    -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
-    -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
-    box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
-    width: 100%;
-    @include resp("s") {
-      width: calc(50% - 8px);
-    }
-    @include resp("m") {
-      width: calc(100% / 3 - 12px);
-    }
+        &__item {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding: 24px 16px;
+          border-radius: 16px;
+          -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+          -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+          box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
 
-    img {
-      height: 160px;
-      border-radius: 16px;
-    }
+          img {
+            height: 160px;
+            border-radius: 16px;
+          }
+          .btn {
+            margin-top: 24px;
+          }
+        }
 
-    &__name {
-      font-weight: $font-weight-semibold;
-      color: $color-primary;
-      @include fontSize(20px);
-      margin-top: 16px;
-    }
+        &__name {
+          font-weight: $font-weight-semibold;
+          color: $color-primary;
+          @include fontSize(20px);
+          margin-top: 16px;
+        }
 
-    &__text {
-      color: $color-primary;
-      margin-top: 8px;
-      @include fontSize(14px);
+        &__text {
+          color: $color-primary;
+          text-align: center;
+          margin-top: 8px;
+          flex-grow: 1;
+          @include fontSize(14px);
+        }
+      }
+      .btn {
+        margin-top: 40px;
+      }
     }
-    &__btn {
-      margin-top: 40px;
-    }
-    }
-  }

@@ -1,5 +1,5 @@
 #hero {
-  background-image: url("/assets/img/hero.jpg");
+  background-image: url("/assets/img/lekar-search.jpg");
 }
 
 .doctors .container {
@@ -41,6 +41,12 @@
     height: 200px;
   }
 }
+.doctors .doctor a {
+  transition: transform 0.1s;
+}
+.doctors .doctor a:hover {
+  transform: scale(0.95);
+}
 .doctors .doctor__name {
   font-weight: 600;
   color: #1e3745;
@@ -73,81 +79,4 @@
   border-radius: 100%;
   margin-top: 8px;
   margin-right: 8px;
-}
-.doctors .btn {
-  margin-top: 40px;
-}
-
-#nasidoktori-grid .container {
-  display: grid;
-  border: black 1px solid;
-  border-radius: 10px;
-  grid-template-columns: minmax(50px, 500px);
-  gap: 20px;
-  grid-template-rows: 25%;
-  justify-content: center;
-  padding: 3%;
-  background-color: #e9f7fb;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#nasidoktori-grid .header {
-  grid-row: 1;
-  background-color: #e9f7fb;
-  color: #000000;
-  padding-top: 3%;
-  text-align: center;
-}
-#nasidoktori-grid .header .h2 {
-  font-size: 2em;
-  border-bottom: 5px solid #2aadd4;
-  display: inline-grid;
-}
-#nasidoktori-grid .header .h3 {
-  font-size: 1.5em;
-  border-bottom: 3px solid #2aadd4;
-  display: inline-grid;
-}
-#nasidoktori-grid .text {
-  padding: 2%;
-  grid-row: 2;
-  background-color: #e9f7fb;
-  color: black;
-  font-size: 1.2em;
-  border-radius: 10px;
-  align-self: flex-start;
-  align-items: center;
-  text-align: center;
-}
-
-.employ-grid {
-  display: grid;
-  grid-template-rows: 100px 60%;
-  grid-template-columns: minmax(50px, 500px);
-  align-items: center;
-  background-color: #e9f7fb;
-  border-radius: 10px;
-  padding: 1%;
-  margin: 10px;
-  border: 3px solid #2aadd4;
-}
-.employ-grid .nadpis-sekce {
-  font-size: 1.5em;
-  grid-column: span 3;
-  text-align: center;
-  border-bottom: 2px solid #2aadd4;
-}
-.employ-grid .item {
-  margin: 15%;
-}
-.employ-grid .item img {
-  max-width: 100%;
-  min-width: 50%;
-  height: auto;
-}
-.employ-grid .item h4 {
-  border-bottom: 2px solid #2aadd4;
-}
-.employ-grid .item p {
-  margin-top: 5px;
 }
