@@ -51,16 +51,16 @@
             <img src="/assets/svg/logo-dark.svg" alt="Zdravotnická instituce" title="Zdravotnická instituce">
         </a>
         <div class="row">
-            <nav role="navigation" class="nav nav--open">
+            <nav role="navigation" class="nav">
                 <a href="/tpl/o-nas" class="nav__item">O nás</a>
                 <a href="/tpl/nasi-doktori" class="nav__item">Naši doktoři</a>
                 <a href="/tpl/aktuality" class="nav__item">Aktuality</a>
                 <a href="/tpl/kontakty" class="nav__item">Kontakty</a>
+                <a href="/tpl/vyhledavani" class="nav__item">Vyhledávání</a>
             </nav>
-            <a class="search" href="/tpl/vyhledavani" title="Vyhledávání">
+            <button type="button" class="search" title="Vyhledávání">
                 <img src="/assets/svg/search.svg" alt="Vyhledávání" title="Vyhledávání">
-                <span>Vyhledávání</span>
-            </a>
+            </button>
             <button class="hamburger hamburger--squeeze" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
@@ -69,6 +69,12 @@
         </div>
     </div>
 </header>
+<form class="search-form">
+    <div class="container">
+        <input type="search" name="search" placeholder="Co hledáte?"/>
+        <button type="submit" title="Vyhledat" class="btn btn--secondary">Vyhledat</button>
+    </div>
+</form>
 <main>
     <section id="hero">
         <div class="overlay"></div>

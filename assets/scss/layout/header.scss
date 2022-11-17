@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
 
     .logo {
-      width: 161px;
+      width: auto;
       height: 48px;
       display: flex;
 
@@ -39,29 +39,11 @@ header {
       margin: 0 16px 0 0;
       border-radius: 4px;
       font-weight: $font-weight-medium;
-      @include resp("m") {
-        margin: 0;
-        width: auto;
-        height: auto;
-        padding: 12px 28px;
-        border-radius: 8px;
-      }
 
-      span {
-        display: none;
-        @include resp("m") {
-          display: flex;
-        }
-      }
 
       img {
         width: 16px;
         height: 16px;
-        @include resp("m") {
-          width: 16px;
-          height: 16px;
-          margin-right: 12px;
-        }
       }
     }
 
@@ -87,7 +69,7 @@ header {
         background-color: transparent;
       }
 
-      &.open {
+      &--open {
         display: flex;
       }
 
@@ -134,6 +116,43 @@ header {
       @include resp("m") {
         display: none;
       }
+    }
+  }
+}
+
+.search-form {
+  display: none;
+  background-color: $color-primary;
+  padding: 16px 0;
+  width: 100%;
+  position: fixed;
+  top: 80px;
+  z-index: 998;
+
+  &.search--open {
+    display: flex;
+  }
+
+  .container {
+    max-width: 800px;
+    align-items: center;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px 0;
+    height: 48px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $color-light-blue;
+    @include fontSize(14px);
+    margin-right: 16px;
+    outline: none;
+    color: $color-light-blue;
+
+    &::placeholder {
+      color: $color-light-blue;
+      opacity: 0.4;
     }
   }
 }

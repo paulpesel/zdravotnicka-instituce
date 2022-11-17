@@ -114,6 +114,10 @@ input[type="number"] {
   padding: 12px 28px;
   border-radius: 8px;
   font-weight: $font-weight-medium;
+  @include fontSize(14px);
+  @include resp("m") {
+    @include fontSize(16px);
+  }
 
   &--primary {
     background-color: $color-primary;
@@ -170,6 +174,7 @@ section {
     }
   }
 }
+
 #contact {
   margin-top: 40px;
   padding: 80px 0;
