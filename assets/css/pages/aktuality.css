@@ -23,9 +23,16 @@
   -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
   box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
 }
+@media (min-width: 992px) {
+  #actuality .grid__item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
 #actuality .grid__item img {
   height: 160px;
   border-radius: 16px;
+  margin-bottom: 16px;
 }
 #actuality .grid__item .btn {
   margin-top: 24px;
@@ -35,7 +42,6 @@
   color: #1e3745;
   font-size: 20px;
   font-size: 1.25rem;
-  margin-top: 16px;
 }
 #actuality .grid__text {
   color: #1e3745;

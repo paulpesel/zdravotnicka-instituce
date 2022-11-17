@@ -1,55 +1,64 @@
 @import "../import.scss";
 
 
-  #actuality {
-      .container {
-        align-items: center;
-        flex-direction: column;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: auto;
-        gap: 16px;
-        margin-top: 40px;
-        @include resp("m") {
-          grid-template-columns: auto auto auto;
-        }
+#actuality {
+  .container {
+    align-items: center;
+    flex-direction: column;
+  }
 
-        &__item {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          padding: 24px 16px;
-          border-radius: 16px;
-          -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
-          -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
-          box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 16px;
+    margin-top: 40px;
+    @include resp("m") {
+      grid-template-columns: auto auto auto;
+    }
 
-          img {
-            height: 160px;
-            border-radius: 16px;
-          }
-          .btn {
-            margin-top: 24px;
-          }
-        }
-
-        &__name {
-          font-weight: $font-weight-semibold;
-          color: $color-primary;
-          @include fontSize(20px);
-          margin-top: 16px;
-        }
-
-        &__text {
-          color: $color-primary;
-          text-align: center;
-          margin-top: 8px;
-          flex-grow: 1;
-          @include fontSize(14px);
+    &__item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 24px 16px;
+      border-radius: 16px;
+      -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+      -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+      box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+      @include resp("m") {
+        &:first-child {
+          grid-column-start: 1;
+          grid-column-end: 3;
         }
       }
+
+      img {
+        height: 160px;
+        border-radius: 16px;
+        margin-bottom: 16px;
+      }
+
       .btn {
-        margin-top: 40px;
+        margin-top: 24px;
       }
     }
+
+    &__name {
+      font-weight: $font-weight-semibold;
+      color: $color-primary;
+      @include fontSize(20px);
+    }
+
+    &__text {
+      color: $color-primary;
+      text-align: center;
+      margin-top: 8px;
+      flex-grow: 1;
+      @include fontSize(14px);
+    }
+  }
+
+  .btn {
+    margin-top: 40px;
+  }
+}
