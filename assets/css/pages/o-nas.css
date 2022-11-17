@@ -2,34 +2,34 @@
   background-image: url("/assets/img/hero.jpg");
 }
 
-#about-us-p .container {
+#about-us .container {
   flex-direction: column;
   align-items: center;
 }
 @media (min-width: 992px) {
-  #about-us-p .container {
+  #about-us .container {
     flex-direction: row;
     align-items: center;
   }
 }
-#about-us-p .wrap {
+#about-us .wrap {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
 }
 @media (min-width: 992px) {
-  #about-us-p .wrap {
+  #about-us .wrap {
     margin-right: 80px;
   }
 }
-#about-us-p .wrap h2 {
+#about-us .wrap h2 {
   border-bottom: 5px solid #2aadd4;
 }
-#about-us-p .wrap p {
+#about-us .wrap p {
   margin-top: 20px;
 }
-#about-us-p figure {
+#about-us figure {
   max-width: 700px;
   width: 100%;
   display: flex;
@@ -42,11 +42,11 @@
   box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
 }
 @media (min-width: 992px) {
-  #about-us-p figure {
+  #about-us figure {
     margin-top: 0;
   }
 }
-#about-us-p figure figcaption {
+#about-us figure figcaption {
   font-size: 14px;
   font-size: 0.875rem;
   padding: 8px 16px;
