@@ -4,6 +4,7 @@
 - Run `npm install` to install dependencies
 
 ## Development
+Run `gulp watch`
 You will find the static pages at `/tpl/`
 
 ## Gulp functions
