@@ -18,11 +18,6 @@
   align-items: center;
   width: 100%;
 }
-@media (min-width: 992px) {
-  #vyhledavani .wrap {
-    margin-right: 80px;
-  }
-}
 #vyhledavani .wrap h2 {
   border-bottom: 4px solid #2aadd4;
   margin-bottom: 15px;
