@@ -1,5 +1,5 @@
-var form = $(".search-form");
-var nav = $(".nav");
+var form = (".search-form");
+var nav = (".nav");
 $(".hamburger").on("click", function () {
     $(this).toggleClass("is-active");
     nav.toggleClass("nav--open");

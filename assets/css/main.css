@@ -258,10 +258,10 @@ section {
   }
 }
 #contact a.phone::before {
-  background-image: url("/assets/svg/telephone.svg");
+  background-image: url("../../assets/svg/telephone.svg");
 }
 #contact a.mail::before {
-  background-image: url("/assets/svg/mail.svg");
+  background-image: url("../../assets/svg/mail.svg");
 }
 
 h1,
