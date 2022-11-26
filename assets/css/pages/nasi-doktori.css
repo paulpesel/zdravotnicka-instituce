@@ -1,5 +1,5 @@
 #hero {
-  background-image: url("../assets/img/lekar-search.jpg");
+  background-image: url("/assets/img/lekar-search.jpg");
 }
 
 .doctors .container {
@@ -33,19 +33,23 @@
   }
 }
 .doctors .doctor img {
+  height: 100%;
+  border-radius: 16px;
+  transition: 300ms ease;
+}
+.doctors .doctor a {
+  display: flex;
   height: 160px;
   border-radius: 16px;
+  overflow: hidden;
 }
 @media (min-width: 992px) {
-  .doctors .doctor img {
+  .doctors .doctor a {
     height: 200px;
   }
 }
-.doctors .doctor a {
-  transition: transform 0.1s;
-}
-.doctors .doctor a:hover {
-  transform: scale(0.95);
+.doctors .doctor a:hover img {
+  transform: scale(1.1);
 }
 .doctors .doctor__name {
   font-weight: 600;

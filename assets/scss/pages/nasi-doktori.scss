@@ -1,7 +1,7 @@
 @import "../import.scss";
 
 #hero {
-  background-image: url("../assets/img/lekar-search.jpg");
+  background-image: url("/assets/img/lekar-search.jpg");
 }
 
 .doctors {
@@ -32,18 +32,25 @@
     @include resp("m") {
       width: calc(100% / 3 - 12px);
     }
+
     img {
+      height: 100%;
+      border-radius: 16px;
+      transition: 300ms ease;
+    }
+
+    a {
+      display: flex;
       height: 160px;
       border-radius: 16px;
+      overflow: hidden;
       @include resp("m") {
         height: 200px;
       }
     }
-    a{
-      transition: transform .1s;
-    }
-    a:hover{
-      transform: scale(0.95);
+
+    a:hover img {
+      transform: scale(1.1);
     }
 
     &__name {

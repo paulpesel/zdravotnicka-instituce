@@ -196,6 +196,10 @@ section {
   height: 100%;
   width: 100%;
   position: absolute;
+  background-image: url("/assets/img/map.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
   left: 0;
 }
