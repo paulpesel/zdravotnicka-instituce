@@ -28,7 +28,19 @@
   border-bottom: 3px solid #2aadd4;
 }
 #kontakty .wrap p {
-  margin-top: 16px;
+  margin-top: 8px;
+  max-width: 50%;
+}
+#kontakty .wrap address {
+  color: #1e3745;
+  margin-top: 8px;
+  max-width: 50%;
+  font-family: "Poppins", sans-serif;
+}
+#kontakty .wrap a {
+  color: #1e3745;
+  margin-top: 8px;
+  max-width: 50%;
 }
 #kontakty figure {
   max-width: 700px;

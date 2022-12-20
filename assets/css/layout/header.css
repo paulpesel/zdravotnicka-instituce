@@ -107,7 +107,6 @@ header .container {
   justify-content: space-between;
 }
 header .container .logo {
-  width: auto;
   height: 48px;
   display: flex;
 }

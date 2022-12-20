@@ -1,5 +1,5 @@
 #hero {
-  background-image: url("/assets/img/lekar-search.jpg");
+  background-image: url("/assets/img/doktori.jpg");
 }
 
 .doctors .container {
@@ -8,7 +8,7 @@
 }
 .doctors .row {
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 24px;
 }
 .doctors .doctor {

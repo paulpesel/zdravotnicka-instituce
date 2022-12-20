@@ -23,12 +23,24 @@
       margin-right: 80px;
     }
     h2{
-
       border-bottom: 3px solid #2aadd4;
     }
     p {
-      margin-top: 16px;
+      margin-top: 8px;
+      max-width: 50%;
     }
+    address {
+       color: $color-primary;
+       margin-top: 8px;
+       max-width: 50%;
+      font-family: "Poppins", sans-serif;
+     }
+    a {
+      color: $color-primary;
+      margin-top: 8px;
+      max-width: 50%;
+    }
+
   }
 
   figure {
