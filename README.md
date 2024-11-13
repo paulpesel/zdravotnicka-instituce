@@ -1,4 +1,4 @@
-# VPL MUDr. Jana Pivoňková
+# Zdravotnická instituce
 
 ## Installation
 - Run `npm install` to install dependencies
