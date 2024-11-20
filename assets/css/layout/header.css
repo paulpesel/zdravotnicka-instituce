@@ -175,6 +175,11 @@ header .container .nav__item {
     padding: 0;
   }
 }
+@media (min-width: 992px) {
+  header .container .nav__item:last-child {
+    display: none;
+  }
+}
 header .container .nav__item::after {
   content: "";
   width: 9px;
@@ -192,6 +197,14 @@ header .container .nav__item::after {
 }
 header .container .nav__item:hover {
   color: #2aadd4;
+}
+header .container .btn {
+  display: none;
+}
+@media (min-width: 992px) {
+  header .container .btn {
+    display: flex;
+  }
 }
 header .container .hamburger {
   width: 32px;

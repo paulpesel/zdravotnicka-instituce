@@ -123,6 +123,7 @@ input[type=number] {
   padding: 12px 28px;
   border-radius: 8px;
   font-weight: 500;
+  text-align: center;
   font-size: 14px;
   font-size: 0.875rem;
 }
@@ -164,6 +165,9 @@ section {
   background: #1e3745;
   background: linear-gradient(90deg, #1e3745 0%, rgba(0, 0, 0, 0) 100%);
 }
+#hero .overlay.b {
+  background-color: rgba(30, 55, 69, 0.8);
+}
 #hero .wrap {
   display: flex;
   flex-direction: column;
@@ -179,6 +183,13 @@ section {
 }
 #hero .wrap .btn {
   margin-top: 40px;
+}
+#hero .wrap .btn--b {
+  background-color: #2aadd4;
+}
+#hero .wrap .btn--b:hover {
+  background-color: #e9f7fb;
+  color: #1e3745;
 }
 
 #contact {

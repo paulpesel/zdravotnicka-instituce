@@ -114,6 +114,7 @@ input[type="number"] {
   padding: 12px 28px;
   border-radius: 8px;
   font-weight: $font-weight-medium;
+  text-align: center;
   @include fontSize(14px);
   @include resp("m") {
     @include fontSize(16px);
@@ -152,6 +153,9 @@ section {
     top: 0;
     background: rgb(30, 55, 69);
     background: linear-gradient(90deg, rgba(30, 55, 69, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    &.b {
+      background-color: rgba($color-primary, 0.8);
+    }
   }
 
   .wrap {
@@ -171,6 +175,13 @@ section {
 
     .btn {
       margin-top: 40px;
+      &--b {
+        background-color: $color-secondary;
+        &:hover {
+          background-color: $color-light-blue;
+          color: $color-primary;
+        }
+      }
     }
   }
 }

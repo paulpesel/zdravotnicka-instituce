@@ -1,0 +1,202 @@
+.objednavka .container {
+  flex-direction: column;
+  gap: 40px;
+}
+.objednavka__inner {
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  color: #1e3745;
+  border-radius: 24px;
+  -webkit-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+  -moz-box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+  box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.15);
+}
+.objednavka__inner input, .objednavka__inner .input {
+  padding: 12px 8px;
+  border: 1px solid #1e3745;
+  border-radius: 8px;
+  color: #1e3745;
+  outline: none;
+  resize: none;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.objednavka__navstevy {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+  .objednavka__navstevy {
+    gap: 24px;
+  }
+}
+.objednavka__navstevy__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 600;
+  padding: 24px;
+  width: calc(50% - 8px);
+  border-radius: 8px;
+  gap: 8px;
+  background-color: #1e3745;
+  cursor: pointer;
+  transition: 200ms ease;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .objednavka__navstevy__item {
+    width: calc(33.3333333333% - 18px);
+  }
+}
+@media (min-width: 1366px) {
+  .objednavka__navstevy__item {
+    width: calc(25% - 18px);
+  }
+}
+.objednavka__navstevy__item:hover {
+  background-color: #2aadd4;
+}
+.objednavka__navstevy__item svg {
+  height: 40px;
+  width: 40px;
+}
+.objednavka__terminy {
+  color: #1e3745;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.objednavka__terminy input {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .objednavka__terminy input {
+    width: calc(50% - 20px);
+  }
+}
+.objednavka__terminy__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .objednavka__terminy__list {
+    width: calc(50% - 20px);
+  }
+}
+.objednavka__terminy__item {
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #1e3745;
+  border-radius: 32px;
+}
+.objednavka__terminy__item:hover {
+  background-color: #2aadd4;
+}
+.objednavka__terminy__item--disabled, .objednavka__terminy__item--disabled:hover {
+  background-color: rgba(30, 55, 69, 0.2);
+}
+.objednavka__detaily {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e3745;
+}
+.objednavka__detaily > div {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.objednavka__detaily__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.objednavka__detaily__inner > span {
+  font-weight: 600;
+  color: #1e3745;
+}
+.objednavka__detaily__inner form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+}
+.objednavka__detaily__inner form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .objednavka__detaily__inner form label {
+    width: calc(50% - 8px);
+  }
+}
+.objednavka__detaily__inner form label span {
+  color: #1e3745;
+  font-size: 14px;
+  font-weight: 500;
+}
+.objednavka__detaily__inner form label input {
+  width: 100%;
+}
+.objednavka__detaily__inner form a {
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #1e3745;
+}
+@media (min-width: 992px) {
+  .objednavka__detaily__inner form a {
+    width: calc(50% - 8px);
+  }
+}
+.objednavka__detaily__inner form a:hover {
+  background-color: #fff;
+  color: #1e3745;
+}
+.objednavka__rezervace {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+}
+.objednavka__rezervace__icon {
+  padding: 12px;
+  border-radius: 100%;
+  background-color: #1e3745;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.objednavka__rezervace__icon svg {
+  height: 80px;
+  width: 80px;
+}
+.objednavka__rezervace__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.objednavka__rezervace__inner span {
+  color: #1e3745;
+}
+.objednavka__rezervace__termin {
+  font-weight: 600;
+}
+.objednavka__rezervace__txt {
+  font-size: 14px;
+}
