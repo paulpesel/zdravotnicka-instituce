@@ -115,6 +115,15 @@
   flex-direction: column;
   gap: 40px;
 }
+.objednavka__detaily--b > div {
+  flex-direction: row;
+}
+.objednavka__detaily--b .objednavka__detaily__inner {
+  width: 100%;
+}
+.objednavka__detaily--b form label, .objednavka__detaily--b form a {
+  width: 100% !important;
+}
 .objednavka__detaily__inner {
   display: flex;
   flex-direction: column;

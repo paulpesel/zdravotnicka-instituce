@@ -124,6 +124,21 @@
       gap: 40px;
     }
 
+    &--b {
+      > div {
+        flex-direction: row;
+      }
+      .objednavka__detaily__inner {
+        width: 100%;
+      }
+
+      form {
+        label, a {
+          width: 100%!important;
+        }
+      }
+    }
+
     &__inner {
       display: flex;
       flex-direction: column;
