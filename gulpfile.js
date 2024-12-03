@@ -28,7 +28,7 @@ function watch() {
         server: true
     });
     gulp.watch('./assets/scss/**/*.scss', style);
-    gulp.watch('./pages/**/*.html').on('change', browserSync.reload);
+    gulp.watch('./**/*.html').on('change', browserSync.reload);
     gulp.watch('./assets/js/**/*.js').on('change', browserSync.reload);
 }
 

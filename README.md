@@ -5,7 +5,7 @@
 
 ## Development
 Run `gulp watch`
-You will find the static pages at `/tpl/`
+You will find the static pages at `/`
 
 ## Gulp functions
 In case gulp command is not found try
