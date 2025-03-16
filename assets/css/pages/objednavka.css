@@ -70,7 +70,6 @@
   display: flex;
   align-items: flex-start;
   gap: 40px;
-  height: 30vh;
   flex-wrap: wrap;
 }
 .objednavka__terminy input {
@@ -191,7 +190,7 @@
   justify-content: center;
 }
 .objednavka__rezervace__icon svg {
-  height: 180px;
+  height: 80px;
   width: 80px;
 }
 .objednavka__rezervace__inner {
