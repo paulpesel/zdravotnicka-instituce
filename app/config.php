@@ -1,20 +1,19 @@
 <?php
-// Nastavení připojení k databázi
-$host = "localhost"; // nebo IP serveru
-$dbname = "zdravotnicka_instituce";
-$username = "root"; // změň podle svého nastavení
-$password = ""; // pokud máš heslo, zadej ho sem
+$database = 'ete32e_2425zs_12';
+$username = 'ete32e_2425zs_12';
+$password = '144.110+096!32';
+$host = 'localhost';
 
-try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Chyba připojení k databázi: " . $e->getMessage());
+$mysqli = new mysqli($host, $username, $password, $database);
+
+// Kontrola připojení
+if ($mysqli->connect_errno) {
+    die('Failed to connect to MySQL: ' . $mysqli->connect_error);
 }
 
-// Funkce pro bezpečné získání instance PDO
+// Funkce pro získání instance připojení
 function getDB() {
-    global $pdo;
-    return $pdo;
+    global $mysqli;
+    return $mysqli;
 }
 ?>
