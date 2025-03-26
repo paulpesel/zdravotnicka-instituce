@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -14,7 +12,7 @@
     <div class="container">
         <div class="login-box">
             <h2>Přihlášení</h2>
-            <form id="loginForm" action="/routes/login.php" method="POST">
+            <form id="loginForm">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" required>
 
@@ -28,7 +26,7 @@
         </div>
     </div>
 </section>
-<!--
+
 <script>
     document.getElementById("loginForm").addEventListener("submit", async function(event) {
         event.preventDefault();
@@ -63,6 +61,6 @@
         }
     });
 </script>
--->
+
 </body>
 </html>

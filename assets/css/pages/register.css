@@ -1,0 +1,64 @@
+#register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e9f7fb;
+}
+#register .container {
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 0 24px 0 rgba(40, 174, 212, 0.25);
+  text-align: center;
+}
+#register h2 {
+  color: #1e3745;
+  font-weight: 700;
+}
+#register form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+#register form label {
+  text-align: left;
+  font-weight: 500;
+  color: #1e3745;
+  margin-top: 8px;
+}
+#register form input {
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #2aadd4;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+#register form .btn {
+  background-color: #2aadd4;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#register form .btn:hover {
+  background-color: #228aa9;
+}
+#register p {
+  margin-top: 8px;
+  color: #1e3745;
+}
+#register p a {
+  color: #2aadd4;
+  text-decoration: none;
+  font-weight: 600;
+}
+#register p a:hover {
+  text-decoration: underline;
+}
